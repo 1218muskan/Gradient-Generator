@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:rgb(239, 244, 248);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header > p {
+    margin-top: 15px;
+    font-size: 1.3em;
+    font-family:cursive;
+}
+
+/* Header Finishes */
+
+
+/* MAIN PAGE CONTENT */
+.grad-box, .color , .color-code {
+    float: left;
+    width: 33%;
+    /* border: 1px solid blue; */
+}
+
+#gradient {
+    height:350px;
+    width: 280px;
+    margin: 20px 100px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, rgb(104, 106, 182), rgb(238, 129, 225));
+}
+
+#type-grad{
+    margin: 50px 0 0 125px;
+}
+
+#type-grad > h3 {
+    margin-left:28px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#Gradient-Type{
+   padding: 3px;
+}
+
+#color1 {
+    float: left;
+    margin: 90px 15px 0 170px;
+}
+
+#color2 {
+    float: left;
+    margin-top: 90px;
+}
+
+span {
+    display: block;
+    margin: 5px 2px;
+    clear: both;
+}
+
+.color-code {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.color-code > p {
+    margin-top: 30px;
+    font-family: cursive;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* MAIN PAGE CONTENT FINISHES */
+
+
+@media (max-width:1200px) and (min-width:768px)
+{
+    .grad-box , .color{
+        width: 50%;
+    }
+    .color-code{
+        margin-top: 40px;
+        width:100%;
+        text-align: center;
+    }
+    #gradient{
+        width: 260px;
+        height: 310px;
+    }
+
+}
+
+@media (max-width:767px)
+{
+    .grad-box , .color{
+        width: 100%;
+    }
+    .color-code{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width:100%;
+        text-align: center;
+    }
+    #gradient{
+        width: 240px;
+        height: 300px;
+        text-align: center;
+        margin:0px 20%;
+    }
+
+    #type-grad{
+        margin: 40px 25% 0;
+    }
+
+    #color1 {
+        margin-top: 40px;
+        margin-left: 32%;
+    }
+    #color2 {
+        margin-top: 40px;
+    }
+
+}
+
