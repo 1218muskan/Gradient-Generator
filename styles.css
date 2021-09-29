@@ -13,11 +13,11 @@ header {
     margin-bottom: 75px;
 }
 
-h1 {
+h1 {       /* Main Heading */
     text-transform: uppercase;
 }
 
-header > p {
+header > p {           
     margin-top: 15px;
     font-size: 1.3em;
     font-family:cursive;
@@ -26,81 +26,70 @@ header > p {
 
 
 /* MAIN PAGE CONTENT */
-.grad-box, .color , .color-code {
-    float: left;
-    width: 33%;
-    /* border: 1px solid blue; */
-}
-
-#gradient {
-    height:350px;
-    width: 280px;
-    margin: 20px 100px;
+#gradient {       
     border-radius: 25px;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
     background: linear-gradient(45deg, rgb(104, 106, 182), rgb(238, 129, 225));
 }
 
-#type-grad{
+#type-grad{        /* Div for Type of gradient */
     margin: 50px 0 0 125px;
 }
 
-#type-grad > h3 {
+#type-grad > h3 {         /* Heading for type of gradient */
     margin-left:28px;
     margin-bottom: 10px;
     font-size: 22px;
 }
 
-#Gradient-Type{
+#Gradient-Type{     /* Dropdown */
    padding: 3px;
    font-size: 15px;
 }
 
-#color1 {
+#color1 {       /* div for inputting color 1 */
     float: left;
     margin: 90px 15px 0 170px;
     
 }
 
-#color2 {
+#color2 {        /* div for inputting color 2 */
     float: left;
     margin-top: 90px;
     margin-left: 5px;
 }
 
-.input-color1, .input-color2{
+.input-color1, .input-color2{      /* Color box */
     width: 60px;
     height: 30px;
 }
 
-span {
+span {         /* Heading color 1 and color 2 */
     display: block;
     margin-bottom: 5px;
     clear: both;
     font-size: 20px;
 }
 
-.color-code {
+.color-code {        /* 3rd section: code for gradient */
     margin-top: 100px;
     padding: 10px;
 }
 
-.color-code > h2 {
+.color-code > h2 {      /* Heading for 3rd section */
     font-size: 27px;
     font-family:'Times New Roman', Times, serif;
 }
 
-.color-code > p {
+.color-code > p {       /* code generated*/
     margin-top: 30px;
-    font-family: cursive;
+    font-family:'PT Serif', serif;
     font-size: 18px;
     font-weight: 500;
 }
 
-.color-code > button {
+.color-code > button {       /* Copy to clipboard button */
     margin: 50px 35% 0;
-    
-    /* justify-content: center; */
     width: 90px;
     height: 40px;
     font-size: 15px;
@@ -120,12 +109,29 @@ button:active {
 /* MAIN PAGE CONTENT FINISHES */
 
 
-@media (max-width:1200px) and (min-width:768px)
+@media (min-width:1200px) 
+{
+    .grad-box , .color , .color-code{
+        float: left;
+        width: 33%;
+        /* border: 1px solid blue; */
+    }
+
+    #gradient {
+        height:350px;
+        width: 280px;
+        margin: 20px 100px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:768px)
 {
     .grad-box , .color{
+        float: left;
         width: 50%;
     }
     .color-code{
+        float: left;
         margin-top: 40px;
         width:100%;
         text-align: center;
@@ -133,19 +139,20 @@ button:active {
     #gradient{
         width: 260px;
         height: 310px;
+        margin: 20px 100px;
     }
 
 }
 
 @media (max-width:767px)
 {
-    .grad-box , .color{
+    .grad-box , .color , .color-code{
         width: 100%;
+        float: left;
     }
     .color-code{
         margin-top: 50px;
         margin-bottom: 50px;
-        width:100%;
         text-align: center;
     }
     #gradient{

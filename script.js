@@ -25,6 +25,8 @@ function CopyToClip()
     window.getSelection().addRange(r);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
+
+    alert('Code Copied' )
 }
 
 color1.addEventListener("input", setGradient);
